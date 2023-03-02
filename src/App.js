@@ -6,7 +6,6 @@ import { PokemonDataContext } from "./context/PokemonData.Context";
 import Navigation from "./components/Navigation/Navigation";
 import PokemonList from "./components/PokemonList/PokemonList";
 import Modal from "./components/Modal/Modal";
-import { ModalContext } from "./context/Modal.Context";
 import { POKEDEX_MAX_SIZE } from "./utils/utils";
 
 const query = `
@@ -49,7 +48,6 @@ query pokemonQuery {
 
 function App() {
   const { pokemonData, setPokemonData } = useContext(PokemonDataContext);
-  const { modalData, setModalData } = useContext(ModalContext);
 
   //on first time load, makes the request to the graphQL endpoint
   //to pull all pokemon data
@@ -70,6 +68,7 @@ function App() {
       );
     };
     getData();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
