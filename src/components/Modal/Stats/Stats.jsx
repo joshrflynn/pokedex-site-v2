@@ -20,6 +20,7 @@ const Stats = ({ statData }) => {
           </BaseStats>
         );
       })}
+      <p>Base Stat Total: {statTotal}</p>
     </StatContainer>
   );
 };
