@@ -74,23 +74,6 @@ function App() {
   return (
     <div className="App">
       <Navigation />
-      <div
-        style={{
-          textAlign: "center",
-          width: "50%",
-          minWidth: "250px",
-          margin: "20px auto",
-        }}
-      >
-        This app is still under development! Follow updates{" "}
-        <a
-          href="https://github.com/joshrflynn/pokedex-site"
-          target="_blank"
-          rel="noreferrer"
-        >
-          on my GitHub!
-        </a>
-      </div>
 
       {/* loads list when api call finishes */}
       {pokemonData === null ? <p>Loading</p> : <PokemonList />}

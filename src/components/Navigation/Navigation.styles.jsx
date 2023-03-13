@@ -13,6 +13,7 @@ export const Navbar = styled.div`
   left: 0;
   box-shadow: 0px 2px 20px;
   z-index: 1;
+  margin-bottom: 50px;
 
   @media (max-width: 560px) {
     flex-direction: column;
